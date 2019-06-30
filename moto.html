@@ -210,7 +210,7 @@
                             <label for="model" class="form-label">
                               Marque de la Moto</label>
                             <label for="" class="select">
-                              <select name="modele" id="modele" class="select-element">
+                              <select required name="modele" id="modele" class="select-element">
                                 <option value="-1">Choisissez votre marque</option>
                                 <option value="Audi">Audi</option>
                                 <option value="Ferrari">Ferrari</option>
@@ -223,7 +223,7 @@
                             <label for="model" class="form-label">
                               Modéle de la Moto</label>
                             <label for="" class="select">
-                              <select name="modele" id="modele" class="select-element">
+                              <select required name="modele" id="modele" class="select-element">
                                 <option value="-1">Choisissez votre modéle</option>
                                 <option value="Audi">Audi</option>
                                 <option value="Ferrari">Ferrari</option>
@@ -239,25 +239,25 @@
                             <label for="marque" class="form-label">
                               Cylindre
                             </label>
-                            <input type="text" class="input" placeholder="Combien de Cylindre" name="cylindre">
+                            <input required type="text" class="input" placeholder="Combien de Cylindre" name="cylindre">
                           </div>
                           <div class="col col-md-6  form-element">
                             <label for="model" class="form-label">
                               Carnet Dispo</label>
-                            <input type="text" class="input" placeholder="Carnet?" name="carnet">
+                            <input required type="text" class="input" placeholder="Carnet?" name="carnet">
                           </div>
                         </div>
                         <div class="form-elements">
                           <div class="col col-md-6  form-element">
                             <label for="model" class="form-label">
                               Carnet Dispo</label>
-                            <input type="text" class="input" placeholder="Carnet Dispo" name="carnet">
+                            <input required type="text" class="input" placeholder="Carnet Dispo" name="carnet">
                           </div>
                           <div class="col col-md-6  form-element">
                             <label for="marque" class="form-label">
                               Date de mise en circulation
                             </label>
-                            <input type="date" class="input" placeholder="Etat?" name="etat">
+                            <input required type="date" class="input" placeholder="Etat?" name="etat">
 
                           </div>
 
@@ -267,20 +267,20 @@
                           <div class="col col-md-6  form-element">
                             <label for="model" class="form-label">Kilométrage
                             </label>
-                            <input type="text" class="input" placeholder="0 KM" name="carnet">
+                            <input required type="text" class="input" placeholder="0 KM" name="carnet">
                           </div>
                           <div class="col col-md-6 form-element">
                             <label for="marque" class="form-label">
                               Etat de vehicule
                             </label>
-                            <input type="text" class="input" placeholder="Etat?" name="etat">
+                            <input required type="text" class="input" placeholder="Etat?" name="etat">
                           </div>
                         </div>
                         <div class="form-elements">
                           <div class="col col-md-6 form-element">
-                            <button type="button" id="applyFilter" class="  form-button ">
+                            <a href="./contact-moto.html" type="button" id="applyFilter" class="  form-button ">
                               Suivant
-                            </button>
+                            </a>
                           </div>
                         </div>
                       </form>
@@ -402,7 +402,7 @@
                     <h4 class="widget-title">Newsletter</h4>
                     <form action="newsletter.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
                       class="validate rq-newsletter-form" target="_blank">
-                      <input type="email" value="" name="email" placeholder="example@example.com"
+                      <input required type="email" value="" name="email" placeholder="example@example.com"
                         class="fq-newsletter-form" required />
                       <button class="rq-btn" type="submit">
                         <i class="ion-android-send"></i>
