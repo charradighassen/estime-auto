@@ -1,0 +1,233 @@
+/* nav */
+.transparent {
+  background: transparent !important;
+}
+.dark {
+  color: #191919 !important;
+}
+.dark:hover {
+  color: #009CDE !important;
+}
+.light {
+  color: #fff  !important;
+}
+.light:hover {
+  color: #009CDE !important;
+}
+.turbo-vertical-search-area{
+  width: 40vw !important ;
+}
+/* home header */
+.main-header{
+  text-align: center;
+  float: center;
+}
+.logo{
+  margin-bottom: 10%;
+}
+.main-btns-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-btn {
+  font-family: Poppins, sans-serif;
+  padding: 20px ;
+  border-radius: 40px;
+  border:1px solid transparent;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #009CDE;
+  width: 30%;
+  min-width: max-content;
+  letter-spacing: 5px;
+  margin: 10px;
+}
+
+.main-btn:hover {
+  border: solid white 1px;
+  background-color: #009CDE;
+
+}
+
+.main-btn:focus {
+  border: solid white 1px;
+  background-color: #009CDE;
+
+}
+
+.main-title {
+  font-family: Poppins, sans-serif;
+  color: whitesmoke;
+  font-size: 30px;
+  letter-spacing: 10px;
+  line-height: 40px;
+  font-weight: 600;
+}
+/* car - moto forms */
+.form{
+  display:flex;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  align-content: stretch;
+  min-width: auto;
+}
+.form-label{
+  font-family: 'Poppins',sans-serif  ;
+  font-size: 14px;
+  font-weight: 600;
+  color: #343d48;
+
+}
+.form-element{
+  box-sizing:content-box;
+}
+
+.form-elements{
+  margin: 5px 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.select-element {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 3px 10px;
+  display: inline-block;
+  height: 37px;
+  background-color: #009CDE19;
+  background-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: Poppins,sans-serif;
+  font-weight: 500;
+  color: #5e6e82;
+  font-size: 14px;
+  width: 100%;
+}
+.select {
+  overflow: hidden; 
+  position: relative;
+  width: 100%;
+}
+
+.select:after {
+  content:"\f0dc";
+  font-family: FontAwesome;
+  color: #343d4860;
+  padding: 8px 5px;
+  position: absolute; 
+  right: 1; 
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+  box-sizing: border-box;   
+}
+.input {
+  display: inline-block;
+  height: 37px;;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 3px 10px;
+  background-color: #009CDE19;
+  background-size: 16px;
+  width: 100%;
+  font-family: Poppins,sans-serif;
+  font-weight: 400;
+  color: #5f6f83;
+}
+input[type="number"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="date"],input[type="number"] {
+  position: relative;
+  /* padding: 10px; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+  
+}
+
+input[type="date"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  font-family: 'FontAwesome';
+  content: '\f073';
+  /* This is the calendar icon in FontAwesome */
+  width: 20px;
+  height: 40px;
+  font-size: 18px;
+  position: absolute;
+  top:6;
+  right: 2;
+  color: #999;
+}
+
+.form-button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fdfdfd;
+  display: inline-block;
+  background: none;
+  text-align: center;
+  background-color: #454545;
+  padding: 0 45px;
+  height: 38px;
+  line-height: 42px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.4s cubic-bezier(0.28, 0.75, 0.25, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.28, 0.75, 0.25, 1);
+  -ms-transition: all 0.4s cubic-bezier(0.28, 0.75, 0.25, 1);
+  -o-transition: all 0.4s cubic-bezier(0.28, 0.75, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.28, 0.75, 0.25, 1);
+}
+.form-button {
+  font-size: 14px;
+  line-height: 42px;
+  margin-right: 10px;
+  
+  background-color: rgb(56, 192, 250);
+}
+.form-button:hover {
+  background-color: rgb(5, 179, 253);
+}
+.form-button:focus {
+  background: none;
+  background-color: rgb(56, 192, 250);
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
+.fa{
+  color:#454545;
+}
+.fa:hover{
+  color:#009CDE;
+}
+

@@ -1,0 +1,411 @@
+@charset "UTF-8";
+/* --------------------------------------
+Table Of  Content
+1. For initailly menu setup
+*/
+
+.rq-page-post-single-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  background: #f3f3f3;
+}
+
+.rq-page-post-single-wrapper #comments {
+  margin-top: 90px;
+}
+
+.rq-page-post-single-wrapper .post-content img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.rq-page-post-single-wrapper .single-sub-title {
+  text-transform: capitalize;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 24px;
+  margin-bottom: 55px;
+  padding-bottom: 25px;
+  font-weight: 500;
+}
+
+.post-content a {
+  color: black;
+}
+
+.navbar ul.add-a-menu {
+  float: right;
+}
+
+div.widget-list h5.widget-title {
+  margin-top: 10px;
+  margin-bottom: 7px;
+  color: #efa80f;
+  font-weight: 500;
+}
+
+ul.add-a-menu {
+  list-style: none;
+}
+
+ul.add-a-menu a {
+  color: #efa80f;
+}
+
+.alignleft {
+  float: left;
+  padding-right: 15px;
+}
+
+.alignright {
+  float: right;
+  padding-left: 15px;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signle-post-feature-img img.size-full {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.post-content td,
+.comment-text td {
+  border-top: 1px solid #ededed;
+  padding: 6px 10px 6px 0;
+}
+
+.comment-text ul {
+  padding-left: 45px !important;
+}
+
+.wc-default-product .tab-panel {
+  padding-left: 16px;
+  padding-top: 20px;
+}
+
+/*For Reactive CSS override*/
+
+.reactive-top-bar .view-sorting-option {
+  align-items: inherit !important;
+  padding: 2px 10px 10px 15px !important;
+}
+
+.reactive-top-bar .view-sorting-option .right-block {
+  margin-top: 13px;
+}
+
+.reactive-top-bar .view-sorting-option .rq-paginations {
+  padding-top: 13px !important;
+  padding-bottom: 10px !important;
+  height: auto !important;
+  margin-bottom: 0px !important;
+}
+
+/* Sidebar design for .turbo-no-border-sidebar class in listing page */
+
+.turbo-no-border-sidebar .title-content {
+  border: none;
+}
+
+.turbo-no-border-sidebar .single-component .DateRangePicker {
+  width: 100%;
+}
+
+.turbo-no-border-sidebar
+  .single-component
+  .DateRangePicker
+  .DateRangePickerInput {
+  width: 100%;
+  border: 1px solid rgba(204, 202, 205, 0.5) !important;
+}
+
+.turbo-no-border-sidebar .single-component .Select-control {
+  background-color: #fff;
+  border: 1px solid rgba(204, 202, 205, 0.5) !important;
+}
+
+/* Sidebar design for .turbo-border-sidebar class in listing page */
+
+.turbo-border-sidebar .single-component {
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc !important;
+  border-right: 1px solid #ccc !important;
+}
+
+.turbo-border-sidebar .single-component .DateRangePicker {
+  width: 100%;
+}
+
+.turbo-border-sidebar .single-component .DateRangePicker .DateRangePickerInput {
+  width: 100%;
+  border: 1px solid rgba(204, 202, 205, 0.5) !important;
+}
+
+.turbo-border-sidebar .single-component .Select-control {
+  background-color: #fff;
+  border: 1px solid rgba(204, 202, 205, 0.5) !important;
+}
+
+/* Sidebar design for .turbo-no-bg-sidebar class in listing page */
+
+.turbo-no-bg-sidebar .title-content {
+  border: none;
+  background: none !important;
+  padding: 0 20px;
+}
+
+.turbo-no-bg-sidebar .single-component {
+  border: none;
+  background: none !important;
+  padding: 10px 20px 20px !important;
+}
+
+.turbo-no-bg-sidebar .single-component .DateRangePicker {
+  width: 100%;
+}
+
+.turbo-no-bg-sidebar .single-component .DateRangePicker {
+  width: 100%;
+}
+
+.turbo-no-bg-sidebar .single-component .DateRangePicker .DateRangePickerInput {
+  width: 100%;
+  border: 1px solid rgba(204, 202, 205, 0.5) !important;
+}
+
+.turbo-no-bg-sidebar .single-component .Select-control {
+  background-color: #fff;
+  border: 1px solid rgba(204, 202, 205, 0.5) !important;
+}
+
+.turbo-no-bg-sidebar .single-component .searchbox-input {
+  border-radius: 0px;
+}
+
+.turbo-no-bg-sidebar .single-component .searchbox-input input {
+  background: #fff;
+  border-radius: 0px;
+}
+
+.turbo-woo-login {
+  height: 55px;
+}
+
+ul.reactive-list-item {
+  display: inline-flex;
+}
+
+li.search-content {
+  list-style-type: none;
+}
+
+.select-content {
+  overflow: auto;
+}
+
+@media (max-width: 600px) {
+  ul.reactive-list-item {
+    display: block;
+  }
+  .select-content {
+    overflow-y: scroll;
+    height: 300px;
+  }
+}
+
+@media (max-width: 990px) {
+  .for-search-panel {
+    overflow-y: scroll;
+    height: 400px;
+    text-align: center;
+  }
+}
+
+.notice-login-first {
+  background: #efa80f !important;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 45px;
+  border-radius: 0 !important;
+  text-align: center;
+  clear: both;
+}
+
+.notice-login-first a {
+  color: #f3f3f3 !important;
+  font-family: Poppins, sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.roouser-license-frontend,
+.roouser-license-backend {
+  margin-bottom: 30px;
+}
+
+.rq-search-single .select2-container {
+  width: 94% !important;
+}
+
+.rq-search-single .select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: none;
+  border-radius: 0px;
+}
+
+.rq-search-single
+  .select2-container
+  .select2-selection--single
+  .select2-selection__rendered {
+  padding-left: 0px;
+  color: #000000;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.rq-search-single
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  top: 0px;
+}
+
+.rq-title.rq-title-upsell,
+.rq-title.rq-title-related {
+  padding-left: 0px;
+  padding-bottom: 25px;
+}
+
+.navbar .navbar-nav .dropdown-menu li a {
+  transition: all 0.3s ease;
+}
+
+#add_payment_method #payment ul.payment_methods li,
+.woocommerce-checkout
+  #payment
+  ul.payment_methods
+  li.wc_payment_method.payment_method_stripe
+  label
+  img {
+  width: 36px;
+}
+
+form.cart button.redq_request_for_a_quote {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .rq-product-page-right .rq-product-sidebar-heading {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .rq-content-block2 .car-avarage-rating {
+    position: relative;
+    top: 25px;
+    right: 0;
+  }
+}
+
+.redq-quantity.rnb-select-wrapper.rnb-component-wrapper .inventory-qty {
+  height: 40px;
+  width: 55px !important;
+  padding-left: 14px;
+  border-radius: 4px;
+  border: 1px solid #bababa;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 767px) {
+  .logged-in.admin-bar .navbar.navbar-default.sks-custom {
+    top: 0px !important;
+  }
+}
+
+.rq-page-content .gm-style .gm-style-iw {
+  width: 374px !important;
+  color: #343d48;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  padding: 8px;
+}
+
+.rq-page-content .gm-style .gm-style-iw > div {
+  width: 370px !important;
+  position: relative;
+}
+
+.rq-page-content .gm-style .gm-style-iw > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+}
+
+.rq-page-content .gm-style .gm-style-iw > div > div div.image {
+  position: relative;
+  width: 58%;
+  height: 180px;
+}
+
+.rq-page-content .gm-style .gm-style-iw > div > div div.image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rq-page-content .gm-style .gm-style-iw > div > div .loc-content {
+  padding-top: 15px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.rq-page-content .gm-style .gm-style-iw > div > div .loc-content h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #323232;
+}
+
+.rq-page-content .gm-style .gm-style-iw > div > div .loc-content p {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #afafaf;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-nav li.right-side-link {
+    margin: 0 10px;
+  }
+}
+
+.rq-shopping-content-block .woocommerce-message {
+  width: 100%;
+}
+
+.rq-title-container.bredcrumb-title.text-left {
+  max-width: 100%;
+}
+
+.col-md-12.rq-rental-product-comment-form {
+  padding-left: 0px;
+}
