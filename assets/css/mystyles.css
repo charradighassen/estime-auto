@@ -64,11 +64,22 @@
   line-height: 40px;
   font-weight: 600;
 }
-/* car - moto forms */
+
+/* redifine css */
 
 .turbo-vertical-search-area{
   width: 50vw !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .turbo-vertical-search-area{
+    width: 90vw !important;
+  }
+}
+
+/* car - moto forms */
+
+
 .form{
   display:flex;
   /* width: 480px; */
@@ -86,14 +97,15 @@
 
 }
 .form-element{
-  box-sizing:content-box;
+  display: block;
+  min-width: 250px;
 }
 
 .form-elements{
   margin: 5px 0;
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .select-element {
@@ -143,6 +155,7 @@
   font-family: Poppins,sans-serif;
   font-weight: 400;
   color: #5f6f83;
+  font-size: 12px;
 }
 input[type="number"]{
   -webkit-appearance: none;
