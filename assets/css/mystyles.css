@@ -71,12 +71,20 @@
   width: 50vw !important;
 }
 
-@media only screen and (max-width: 720px) {
+@media  screen and (max-width: 767px) {
   .turbo-vertical-search-area{
     width: 90vw !important;
   }
+  .form-element{
+    width: 100%;
+  }
 }
-
+@media  screen and (max-width: 990px) {
+  
+  .form-element{
+    width: 100%;
+  }
+}
 /* car - moto forms */
 
 
@@ -98,7 +106,6 @@
 }
 .form-element{
   display: block;
-  min-width: 250px;
 }
 
 .form-elements{
@@ -106,13 +113,13 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .select-element {
   border-radius: 5px;
   border: 1px solid transparent;
   padding: 3px 10px;
-  display: inline-block;
   height: 37px;
   background-color: #009CDE19;
   background-size: 16px;
@@ -142,9 +149,9 @@
   z-index: 1;
   pointer-events: none;
   box-sizing: border-box;   
+  
 }
 .input {
-  display: inline-block;
   height: 37px;;
   border-radius: 5px;
   border: 1px solid transparent;
