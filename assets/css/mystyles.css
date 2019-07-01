@@ -235,3 +235,18 @@ input[type="date"]:before {
   color:#009CDE;
 }
 
+/* contact page */
+
+.rq-btn-primary{
+  background: #009CDE;
+}
+.rq-btn-primary:hover{
+  background: #009CDE90;
+}
+.inner-page-banner{
+  background-image: url(../images/car-header.png)  ;
+}
+
+.rq-title{
+  color: #343d48 !important ;
+}
