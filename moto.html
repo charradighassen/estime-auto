@@ -193,20 +193,33 @@
             <div class="wpb_wrapper">
               <div class="header turbo-vertical-search-wrapper index-two-header">
                 <div class="header-body"
-                  style="background: url(&#39;./assets/images/bg-moto.png&#39;) top center no-repeat; background-size: 100% auto;">
+                  style="background: url(&#39;./assets/images/bg-moto.jpg&#39;) top center no-repeat; background-size: 100% auto">
                   <div class="container">
                     <div class="turbo-vertical-search-area">
                       <div class="search-header">
                         <h3>ESTIMER VOTRE Moto AUX MEILLEURS PRIX</h3>
                       </div>
 
-                      <form action="" class="form form-group">
+                      <form action="./script.php" method="POST" class="form form-group">
                         <div class="form-elements">
+                          <div class="col col-md-6 form-element">
+                            <label for="model" class="form-label">
+                              Type de la Moto</label>
+                            <label for="" class="select">
+                              <select required name="type_moto" id="modele" class="select-element">
+                                <option value="-1">Choisissez votre type</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Ibiza">Ibiza</option>
+                              </select>
+                            </label>
+
+                          </div>
                           <div class="col col-md-6 form-element">
                             <label for="model" class="form-label">
                               Marque de la Moto</label>
                             <label for="" class="select">
-                              <select required name="modele" id="modele" class="select-element">
+                              <select required name="marque" id="marque" class="select-element">
                                 <option value="-1">Choisissez votre marque</option>
                                 <option value="Audi">Audi</option>
                                 <option value="Ferrari">Ferrari</option>
@@ -214,6 +227,15 @@
                               </select>
                             </label>
 
+                          </div>
+                        </div>
+                        <div class="form-elements">
+
+                          <div class="col col-md-6 form-element">
+                            <label for="marque" class="form-label">
+                              Cylindre
+                            </label>
+                            <input required type="number" class="input" placeholder="Combien de Cylindre" name="cylindre">
                           </div>
                           <div class="col col-md-6 form-element">
                             <label for="model" class="form-label">
@@ -230,20 +252,6 @@
                           </div>
                         </div>
                         <div class="form-elements">
-
-                          <div class="col col-md-6 form-element">
-                            <label for="marque" class="form-label">
-                              Cylindre
-                            </label>
-                            <input required type="text" class="input" placeholder="Combien de Cylindre" name="cylindre">
-                          </div>
-                          <div class="col col-md-6  form-element">
-                            <label for="model" class="form-label">
-                              Carnet Dispo</label>
-                            <input required type="text" class="input" placeholder="Carnet?" name="carnet">
-                          </div>
-                        </div>
-                        <div class="form-elements">
                           <div class="col col-md-6  form-element">
                             <label for="model" class="form-label">
                               Carnet Dispo</label>
@@ -253,7 +261,7 @@
                             <label for="marque" class="form-label">
                               Date de mise en circulation
                             </label>
-                            <input required type="date" class="input" placeholder="Etat?" name="etat">
+                            <input required type="date" class="input" placeholder="date?" name="date_MenC">
 
                           </div>
 
@@ -263,7 +271,7 @@
                           <div class="col col-md-6  form-element">
                             <label for="model" class="form-label">Kilométrage
                             </label>
-                            <input required type="text" class="input" placeholder="0 KM" name="carnet">
+                            <input required type="number" class="input" placeholder="0 KM" name="kilometrage">
                           </div>
                           <div class="col col-md-6 form-element">
                             <label for="marque" class="form-label">
@@ -274,9 +282,9 @@
                         </div>
                         <div class="form-elements">
                           <div class="col col-md-6 form-element">
-                            <a href="./contact-moto.html" type="button" id="applyFilter" class="  form-button ">
+                            <button  type="submit" id="applyFilter" class="  form-button ">
                               Suivant
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </form>

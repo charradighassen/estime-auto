@@ -201,7 +201,7 @@
                         <h3>ESTIMER VOTRE VOITURE AUX MEILLEURS PRIX</h3>
                       </div>
 
-                      <form action="" class="form form-group">
+                      <form action="./script.php" method="POST"class="form form-group">
                         <div class=" form-elements">
                           <div class="col col-md-6 form-element">
                             <label for="model" class="form-label">
@@ -249,13 +249,13 @@
                             <label for="marque" class="form-label">
                               Date de mise en circulation
                             </label>
-                            <input  required type="date" class="input" placeholder="Etat?" name="etat">
+                            <input  required type="date" class="input" placeholder="Etat?" name="date_MenC">
 
                           </div>
                           <div class="col col-md-6  form-element">
                             <label for="model" class="form-label">Kilométrage
                             </label>
-                            <input  required type="text" class="input" placeholder="0 KM" name="carnet">
+                            <input  required type="text" class="input" placeholder="0 KM" name="kilometrage">
                           </div>
                         </div>
                         <div class=" form-elements">
@@ -276,7 +276,7 @@
                             <label for="model" class="form-label">
                               Boite de vitesse</label>
                             <label for="" class="select">
-                              <select required name="modele" id="modele" class="select-element">
+                              <select required name="boite_vitesse" id="modele" class="select-element">
                                 <option value="-1"> Type de boite de vitesse</option>
                                 <option value="Audi">Audi</option>
                                 <option value="Ferrari">Ferrari</option>
@@ -291,7 +291,7 @@
                             <label for="model" class="form-label">
                               Motorisation</label>
                             <label for="" class="select">
-                              <select required name="modele" id="modele" class="select-element">
+                              <select required name="motorisation" id="motorisation" class="select-element">
                                 <option value="-1">Motorisation</option>
                                 <option value="Audi">Audi</option>
                                 <option value="Ferrari">Ferrari</option>
@@ -307,9 +307,9 @@
                         </div>
                         <div class=" form-elements">
                           <div class="col col-md-6 form-element">
-                            <a  href="./contact-voiture.html" type="submit" id="applyFilter" class="  form-button ">
+                            <buuton   type="submit" id="applyFilter" class="  form-button ">
                               Suivant
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </form>
