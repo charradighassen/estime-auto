@@ -1,6 +1,6 @@
   
 <?php
-// commun variables 
+if(isset($_POST['suivant'])){
 isset($_POST['type']) ? $type =$_POST['type'] :"";
 isset($_POST['marque']) ? $marque =$_POST['marque'] :"";
 isset($_POST['cylindre']) ? $cylindre =$_POST['cylindre'] :"";
@@ -10,7 +10,6 @@ isset($_POST['date_MenC']) ? $date_MenC =$_POST['date_MenC'] :"";
 isset($_POST['kilometrage']) ? $kilometrage =$_POST['kilometrage'] :"";
 isset($_POST['etat']) ? $etat =$_POST['etat'] :"";
 
-if(isset($_POST['suivant'])){
 session_start();  
 $_SESSION["type"] = $type;
 $_SESSION["marque"] = $marque;

@@ -115,9 +115,12 @@
                         <a href="./voiture.php" class=" btn-primary main-btn">VOITURE</a>
 
                         <a href="./moto.php" class=" btn-primary main-btn">MOTO</a>
-
+                        
 
                       </div>
+                      <p class="main-description">
+                        Pour les articles éligibles. Soumis à conditions.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -279,7 +282,6 @@
 
 
   <script>
-
     $(function () {
       var navbar = $('.navbar');
       var a = $('.main-link');

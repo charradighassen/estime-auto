@@ -69,6 +69,7 @@
 }
 .main-description{
   font-size: 14px !important;
+  display: block;
 }
 /* redifine css */
 
