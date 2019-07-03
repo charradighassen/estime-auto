@@ -18,28 +18,16 @@
   <link rel="stylesheet" id="flaticon-css-css" href="./assets/css/flaticon.css" type="text/css" media="all" />
   <link rel="stylesheet" id="reuse-form-two-css" href="./assets/css/reuse-form-two.css" type="text/css" media="all" />
   <link rel="stylesheet" id="reuse-form-css" href="./assets/css/reuse-form.css" type="text/css" media="all" />
-  <!-- <link rel="stylesheet" id="wp-block-library-css" href="./assets/css/style.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="wc-block-style-css" href="./assets/css/style.css" type="text/css" media="all">
-  <link rel="stylesheet" id="contact-form-7-css" href="./assets/css/styles.css" type="text/css" media="all"> -->
-
   <link rel="stylesheet" id="rental-quote-css" href="./assets/css/quote-front.css" type="text/css" media="all" />
   <link rel="stylesheet" id="font-awesome.min.css-css" href="./assets/css/font-awesome.min.css" type="text/css"
     media="all" />
-  <!-- <link crossorigin="anonymous" rel="stylesheet" href="./assets/css/css.css" type="text/css" media="all">
-  <link crossorigin="anonymous" rel="stylesheet" href="./assets/css/css.css" type="text/css" media="all">
-  <link rel="stylesheet" id="select2.min-css" href="./assets/css/select2.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="css-loader-css" href="./assets/css/css-loader.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="fontawesome-stars-css" href="./assets/css/fontawesome-stars.css" type="text/css"
-    media="all"> -->
   <link rel="stylesheet" id="turbo-style-css" href="./assets/css/turbo.style.css" type="text/css" media="all" />
   <link rel="stylesheet" id="custom-style-css" href="./assets/css/custom-style.css" type="text/css" media="all" />
   <link rel="stylesheet" id="turbo-color-scheme-css" href="./assets/css/yellow.css" type="text/css" media="all" />
 
   <link rel="stylesheet" href="./assets/css/inline-styles.css" />
   <link rel="stylesheet" href="./styles.css" />
-  <!-- <link rel="stylesheet" id="js_composer_front-css" href="./assets/css/js_composer.min.css" type="text/css" media="all"> -->
 
-  <!-- <link rel="stylesheet" href="./assets/css/dynamic.css"> -->
 
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
@@ -111,16 +99,16 @@
             <div class="menu-turbo-menu-container">
               <ul id="menu-turbo-menu" class="nav navbar-nav navbar-center menu">
                 <li id="" class="">
-                  <a href="./index.html"
+                  <a href="./index.php"
                     class=" main-link  menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-761 active dropdown"
                     role="button">Accueil</a>
                 </li>
                 <li id="menu-item-1158" class="  menu-item menu-item-type-post_type menu-item-object-page dropdown">
-                  <a href="./voiture.html" class="  main-link  dropdown-toggle" role="button" data-toggle=""
+                  <a href="./voiture.php" class="  main-link  dropdown-toggle" role="button" data-toggle=""
                     aria-haspopup="true" aria-expanded="false">ESTIMER SA VOIITURE</a>
                 </li>
                 <li id="menu-item-1154" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
-                  <a href="./moto.html" class=" main-link  dropdown-toggle" role="button" data-toggle=""
+                  <a href="./moto.php" class=" main-link  dropdown-toggle" role="button" data-toggle=""
                     aria-haspopup="true" aria-expanded="false">ESTIMER SA MOTO</a>
                 </li>
                 <li id="menu-item-1156" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
@@ -128,7 +116,7 @@
                     aria-expanded="false">QUI SOMMES NOUS</a>
                 </li>
                 <li id="menu-item-1157" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
-                  <a href="./contact.html" class=" main-link  dropdown-toggle" role="button" data-toggle="" aria-haspopup="true"
+                  <a href="./contact.php" class=" main-link  dropdown-toggle" role="button" data-toggle="" aria-haspopup="true"
                     aria-expanded="false">CONTACT</a>
                 </li>
                 
@@ -145,14 +133,14 @@
             <div class="wpb_wrapper">
               <div class="header turbo-vertical-search-wrapper index-two-header">
                 <div class="header-body"
-                  style="background: url(&#39;./assets/images/bg-moto.png&#39;) top center no-repeat; background-size: 100% auto;">
+                  style="background: url(&#39;./assets/images/bg-moto.jpg&#39;) top center no-repeat; background-size: 100% auto;">
                   <div class="container">
                     <div class="turbo-vertical-search-area">
                       <div class="search-header">
                         <h3>PRENEZ RENDEZ VOUS</h3>
                       </div>
 
-                      <form action="./script.php" class="form form-group">
+                      <form action="./info_form.php" method="POST" class="form form-group">
                      
                         <div class="form-elements">
 
@@ -160,45 +148,44 @@
                             <label for="marque" class="form-label">
                               Nom
                             </label>
-                            <input type="text" class="input" placeholder="Taper votre Nom" name="Nom">
+                            <input type="text" class="input" placeholder="Taper votre Nom" name="nom">
                           </div>
                           <div class="col col-md-6  form-element">
                             <label for="model" class="form-label">
                               Prénom</label>
-                            <input type="text" class="input" placeholder="Taper votre Prénom" name="carnet">
+                            <input type="text" class="input" placeholder="Taper votre Prénom" name="prenom">
                           </div>
                         </div>
                         <div class="form-elements">
                           <div class="col col-md-6  form-element">
-                            <label for="model" class="form-label">E-mail
+                            <label for="email" class="form-label">E-mail
                             </label>
-                            <input type="text" class="input" placeholder="Taper votre E-mail" name="carnet">
+                            <input type="text" class="input" placeholder="Taper votre E-mail" name="email">
                           </div>
                           <div class="col col-md-6 form-element">
                             <label for="marque" class="form-label">
                              Télèphone
                             </label>
-                            <input type="text" class="input" placeholder="Taper votre numero" name="etat">
+                            <input type="text" class="input" placeholder="Taper votre numero" name="telephone">
                           </div>
                         </div>
                         <div class="form-elements">
                             <div class="col col-md-6  form-element">
                               <label for="model" class="form-label">Ville
                               </label>
-                              <input type="text" class="input" placeholder="Taper votre ville" name="carnet">
+                              <input type="text" class="input" placeholder="Taper votre ville" name="ville">
                             </div>
                             <div class="col col-md-6 form-element">
                               <label for="marque" class="form-label">
                                 Code Postal
                               </label>
-                              <input type="text" class="input" placeholder="Taper votre code Postale" name="etat">
+                              <input type="text" class="input" placeholder="Taper votre code Postale" name="code_postal">
                             </div>
                           </div>
                         <div class="form-elements">
                           <div class="col col-md-6 form-element">
-                            <button type="button" id="applyFilter" class="  form-button ">
-                              ENVOYER
-                            </button>
+                            <input type="submit"  value="Envoyer" name="envoyer" id="submit" onClick="sent()" class="  form-button ">
+                            
                           </div>
                         </div>
                       </form>
@@ -383,6 +370,11 @@
         }
       });
     });
+    var sent = (e)=>{
+      $('.turbo-vertical-search-area').empty();
+      $('.turbo-vertical-search-area').append('<div class="row"><i class="fas fa-check message-icon"></i><h1 class="message">Votre demande a étè bien enregistré</h1></div>');
+
+    }
   </script>
 </body>
 

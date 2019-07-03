@@ -274,3 +274,17 @@ input[type="date"]:before {
 .rq-title{
   color: #343d48 !important ;
 }
+
+.message{
+  color:#29332ad0 !important;
+  text-align: center;
+  font-size: 24px !important;
+  display: inline;
+}
+
+.message-icon{
+  color:#53f160;
+  margin:0 10px;
+  font-size: 30px;
+  display: inline;
+}

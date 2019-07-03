@@ -62,54 +62,7 @@
     </style>
   </noscript>
 
-  <style>
-    .main-btns-list {
-      display: flex;
-    }
-
-    .main-btn {
-      font-family: Poppins, sans-serif;
-      padding: 10px 30px;
-      border-radius: 25px;
-      margin: 10px 20px;
-      font-size: 20px;
-      font-weight: 600;
-      background-color: #009cde;
-      width: 20%;
-      min-width: max-content;
-      letter-spacing: 2px;
-    }
-
-    .main-btn:hover {
-      border: solid white 1px;
-      background-color: #009cde;
-    }
-
-    .main-btn:focus {
-      border: solid white 1px;
-      background-color: #009cde;
-    }
-
-    .main-title {
-      font-family: Poppins, sans-serif;
-      color: whitesmoke;
-      font-size: 30px;
-      letter-spacing: 10px;
-      font-weight: 600;
-    }
-
-    .transparent {
-      background: transparent !important;
-    }
-
-    .dark {
-      color: #191919 !important;
-    }
-
-    .light {
-      color: #fff !important;
-    }
-  </style>
+  <link rel="stylesheet" href="./assets/css/mystyles.css">
 
 
   <link rel="stylesheet" id="flexbox-grid-css-css" href="./assets/flexboxgrid.css" type="text/css" media="all">
@@ -159,16 +112,16 @@
             <div class="menu-turbo-menu-container">
               <ul id="menu-turbo-menu" class="nav navbar-nav navbar-center menu">
                 <li id="" class="">
-                  <a href="./index.html"
+                  <a href="./index.php"
                     class=" main-link  menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-761 active dropdown"
                     role="button">Accueil</a>
                 </li>
                 <li id="menu-item-1158" class="  menu-item menu-item-type-post_type menu-item-object-page dropdown">
-                  <a href="./voiture.html" class="  main-link  dropdown-toggle" role="button" data-toggle=""
+                  <a href="./voiture.php" class="  main-link  dropdown-toggle" role="button" data-toggle=""
                     aria-haspopup="true" aria-expanded="false">ESTIMER SA VOIITURE</a>
                 </li>
                 <li id="menu-item-1154" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
-                  <a href="./moto.html" class=" main-link  dropdown-toggle" role="button" data-toggle=""
+                  <a href="./moto.php" class=" main-link  dropdown-toggle" role="button" data-toggle=""
                     aria-haspopup="true" aria-expanded="false">ESTIMER SA MOTO</a>
                 </li>
                 <li id="menu-item-1156" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
@@ -176,7 +129,7 @@
                     aria-expanded="false">QUI SOMMES NOUS</a>
                 </li>
                 <li id="menu-item-1157" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
-                  <a href="./contact.html" class=" main-link  dropdown-toggle" role="button" data-toggle="" aria-haspopup="true"
+                  <a href="./contact.php" class=" main-link  dropdown-toggle" role="button" data-toggle="" aria-haspopup="true"
                     aria-expanded="false">CONTACT</a>
                 </li>
                 
@@ -193,98 +146,59 @@
             <div class="wpb_wrapper">
               <div class="header turbo-vertical-search-wrapper index-two-header">
                 <div class="header-body"
-                  style="background: url(&#39;./assets/images/bg-moto.jpg&#39;) top center no-repeat; background-size: 100% auto">
+                  style="background: url(&#39;./assets/images/bg-car.png&#39;) top center no-repeat; background-size: 100% auto;">
                   <div class="container">
                     <div class="turbo-vertical-search-area">
                       <div class="search-header">
-                        <h3>ESTIMER VOTRE Moto AUX MEILLEURS PRIX</h3>
+                        <h3>PRENEZ RENDEZ VOUS</h3>
                       </div>
 
-                      <form action="./script.php" method="POST" class="form form-group">
-                        <div class="form-elements">
-                          <div class="col col-md-6 form-element">
-                            <label for="model" class="form-label">
-                              Type de la Moto</label>
-                            <label for="" class="select">
-                              <select required name="type_moto" id="modele" class="select-element">
-                                <option value="-1">Choisissez votre type</option>
-                                <option value="Audi">Audi</option>
-                                <option value="Ferrari">Ferrari</option>
-                                <option value="Ibiza">Ibiza</option>
-                              </select>
-                            </label>
-
-                          </div>
-                          <div class="col col-md-6 form-element">
-                            <label for="model" class="form-label">
-                              Marque de la Moto</label>
-                            <label for="" class="select">
-                              <select required name="marque" id="marque" class="select-element">
-                                <option value="-1">Choisissez votre marque</option>
-                                <option value="Audi">Audi</option>
-                                <option value="Ferrari">Ferrari</option>
-                                <option value="Ibiza">Ibiza</option>
-                              </select>
-                            </label>
-
-                          </div>
-                        </div>
+                      <form action="./info_form.php" method="POST" class="form form-group">
+                     
                         <div class="form-elements">
 
                           <div class="col col-md-6 form-element">
                             <label for="marque" class="form-label">
-                              Cylindre
+                              Nom
                             </label>
-                            <input required type="number" class="input" placeholder="Combien de Cylindre" name="cylindre">
+                            <input required type="text" class="input" placeholder="Taper votre Nom" name="nom">
                           </div>
-                          <div class="col col-md-6 form-element">
+                          <div class="col col-md-6  form-element">
                             <label for="model" class="form-label">
-                              Modéle de la Moto</label>
-                            <label for="" class="select">
-                              <select required name="modele" id="modele" class="select-element">
-                                <option value="-1">Choisissez votre modéle</option>
-                                <option value="Audi">Audi</option>
-                                <option value="Ferrari">Ferrari</option>
-                                <option value="Ibiza">Ibiza</option>
-                              </select>
-                            </label>
-
+                              Prénom</label>
+                            <input required type="text" class="input" placeholder="Taper votre Prénom" name="prenom">
                           </div>
                         </div>
                         <div class="form-elements">
                           <div class="col col-md-6  form-element">
-                            <label for="model" class="form-label">
-                              Carnet Dispo</label>
-                            <input required type="text" class="input" placeholder="Carnet Dispo" name="carnet">
-                          </div>
-                          <div class="col col-md-6  form-element">
-                            <label for="marque" class="form-label">
-                              Date de mise en circulation
+                            <label for="model" class="form-label">E-mail
                             </label>
-                            <input required type="date" class="input" placeholder="date?" name="date_MenC">
-
-                          </div>
-
-                        </div>
-
-                        <div class="form-elements">
-                          <div class="col col-md-6  form-element">
-                            <label for="model" class="form-label">Kilométrage
-                            </label>
-                            <input required type="number" class="input" placeholder="0 KM" name="kilometrage">
+                            <input required type="text" class="input" placeholder="Taper votre E-mail" name="email">
                           </div>
                           <div class="col col-md-6 form-element">
                             <label for="marque" class="form-label">
-                              Etat de vehicule
+                              Télèphone
                             </label>
-                            <input required type="text" class="input" placeholder="Etat?" name="etat">
+                            <input required type="text" class="input" placeholder="Taper votre numero" name="telephone">
                           </div>
                         </div>
                         <div class="form-elements">
+                            <div class="col col-md-6  form-element">
+                              <label for="model" class="form-label">Ville
+                              </label>
+                              <input required type="text" class="input" placeholder="Taper votre ville" name="ville">
+                            </div>
+                            <div class="col col-md-6 form-element">
+                              <label for="marque" class="form-label">
+                                Code Postal
+                              </label>
+                              <input required type="text" class="input" placeholder="Taper votre code Postale" name="code_postal">
+                            </div>
+                          </div>
+                        <div class="form-elements">
                           <div class="col col-md-6 form-element">
-                            <button  type="submit" id="applyFilter" class="  form-button ">
-                              Suivant
-                            </button>
+                            <input required type="submit" id="submit" value="Envoyer" onClick='sent()' name="envoyer" class="  form-button "/>
+                              
                           </div>
                         </div>
                       </form>
@@ -469,6 +383,13 @@
         }
       });
     });
+
+    var sent = (e)=>{
+      $('.turbo-vertical-search-area').empty();
+      $('.turbo-vertical-search-area').append('<div class="row"><i class="fas fa-check message-icon"></i><h1 class="message">Votre demande a étè bien enregistré</h1></div>');
+
+    }
+    
   </script>
 </body>
 

@@ -1,3 +1,4 @@
+
 <html lang="fr-FR">
 
 
@@ -160,16 +161,16 @@
             <div class="menu-turbo-menu-container">
               <ul id="menu-turbo-menu" class="nav navbar-nav navbar-center menu">
                 <li id="" class="">
-                  <a href="./index.html"
+                  <a href="./index.php"
                     class=" main-link  menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-761 active dropdown"
                     role="button">Accueil</a>
                 </li>
                 <li id="menu-item-1158" class="  menu-item menu-item-type-post_type menu-item-object-page dropdown">
-                  <a href="./voiture.html" class="  main-link  dropdown-toggle" role="button" data-toggle=""
+                  <a href="./voiture.php" class="  main-link  dropdown-toggle" role="button" data-toggle=""
                     aria-haspopup="true" aria-expanded="false">ESTIMER SA VOITURE</a>
                 </li>
                 <li id="menu-item-1154" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
-                  <a href="./moto.html" class=" main-link  dropdown-toggle" role="button" data-toggle=""
+                  <a href="./moto.php" class=" main-link  dropdown-toggle" role="button" data-toggle=""
                     aria-haspopup="true" aria-expanded="false">ESTIMER SA MOTO</a>
                 </li>
                 <li id="menu-item-1156" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
@@ -201,17 +202,57 @@
                         <h3>ESTIMER VOTRE VOITURE AUX MEILLEURS PRIX</h3>
                       </div>
 
-                      <form action="./script.php" method="POST"class="form form-group">
+                      <form action="./voiture_form.php" method="POST"class="form form-group">
                         <div class=" form-elements">
                           <div class="col col-md-6 form-element">
                             <label for="model" class="form-label">
                               Marque de la voiture</label>
                             <label for="" class="select">
-                              <select required name="modele" id="modele" class="select-element">
+                              <select required name="marque" id="modele" class="select-element">
                                 <option value="-1">Choisissez votre marque</option>
-                                <option value="Audi">Audi</option>
-                                <option value="Ferrari">Ferrari</option>
-                                <option value="Ibiza">Ibiza</option>
+                                <option value="ABARTH">ABARTH</option>
+                                <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                <option value="AUDI">AUDI</option>
+                                <option value="BMW">BMW</option>
+                                <option value="CITROEN">CITROEN</option>
+                                <option value="DS">DS</option>
+                                <option value="FERRARI">FERRARI</option>
+                                <option value="FIAT">FIAT</option>
+                                <option value="FORD">FORD</option>
+                                <option value="HONDA">HONDA</option>
+                                <option value="HYUNDAI">HYUNDAI</option>
+                                <option value="INFINITI">INFINITI</option>
+                                <option value="JAGUAR">JAGUAR</option>
+                                <option value="JEEP">JEEP</option>
+                                <option value="KIA">KIA</option>
+                                <option value="LADA">LADA</option>
+                                <option value="LAMBORGHINI">LAMBORGHINI</option>
+                                <option value="LAND ROVER">LAND ROVER</option>
+                                <option value="LEXUS">LEXUS</option>
+                                <option value="LOTUS">LOTUS</option>
+                                <option value="MASERATI">MASERATI</option>
+                                <option value="MAZDA">MAZDA</option>
+                                <option value="MCLAREN">MCLAREN</option>
+                                <option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+                                <option value="MINI">MINI</option>
+                                <option value="MITSUBISHI">MITSUBISHI</option>
+                                <option value="NISSAN">NISSAN</option>
+                                <option value="OPEL">OPEL</option>
+                                <option value="PEUGEOT">PEUGEOT</option>
+                                <option value="PORSCHE">PORSCHE</option>
+                                <option value="RENAULT">RENAULT</option>
+                                <option value="ROLLS ROYCE">ROLLS ROYCE</option>
+                                <option value="SEAT">SEAT</option>
+                                <option value="SKODA">SKODA</option>
+                                <option value="SMART">SMART</option>
+                                <option value="SSANGYONG">SSANGYONG</option>
+                                <option value="SUBARU">SUBARU</option>
+                                <option value="SUZUKI">SUZUKI</option>
+                                <option value="TESLA">TESLA</option>
+                                <option value="TOYOTA">TOYOTA</option>
+                                <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                <option value="VOLVO">VOLVO</option>
                               </select>
                             </label>
 
@@ -219,14 +260,7 @@
                           <div class="col col-md-6 form-element">
                             <label for="model" class="form-label">
                               Modéle de la voiture</label>
-                            <label for="" class="select">
-                              <select required name="modele" id="modele" class="select-element">
-                                <option value="-1">Choisissez votre modéle</option>
-                                <option value="Audi">Audi</option>
-                                <option value="Ferrari">Ferrari</option>
-                                <option value="Ibiza">Ibiza</option>
-                              </select>
-                            </label>
+                            <input  required type="text" class="input" placeholder="Tapez votre modéle" name="modele">
 
                           </div>
                         </div>
@@ -264,10 +298,13 @@
                               Carburant</label>
                             <label for="" class="select">
                               <select required name="carburant" id="carburant" class="select-element">
-                                <option value="-1">Choisissez votre carburant</option>
-                                <option value="Audi">Audi</option>
-                                <option value="Ferrari">Ferrari</option>
-                                <option value="Ibiza">Ibiza</option>
+                                <option value="-1" disabled>Choisissez votre carburant</option>
+                                <option value=" Hybride"> Hybride</option>
+                                <option value=" Essence"> Essence</option>
+                                <option value=" Électrique"> Électrique</option>
+                                <option value=" Diesel"> Diesel</option>
+                               
+
                               </select>
                             </label>
 
@@ -278,7 +315,7 @@
                             <label for="" class="select">
                               <select required name="boite_vitesse" id="modele" class="select-element">
                                 <option value="-1"> Type de boite de vitesse</option>
-                                <option value="Audi">Audi</option>
+                                <option value="Audi">Diesel</option>
                                 <option value="Ferrari">Ferrari</option>
                                 <option value="Ibiza">Ibiza</option>
                               </select>
@@ -290,26 +327,18 @@
                           <div class="col col-md-6 form-element">
                             <label for="model" class="form-label">
                               Motorisation</label>
-                            <label for="" class="select">
-                              <select required name="motorisation" id="motorisation" class="select-element">
-                                <option value="-1">Motorisation</option>
-                                <option value="Audi">Audi</option>
-                                <option value="Ferrari">Ferrari</option>
-                                <option value="Ibiza">Ibiza</option>
-                              </select>
-                            </label>
+                             <input  required type="text" class="input" placeholder="0 CH" name="motorisation">
                           </div>
                           <div class="col col-md-6  form-element">
                             <label for="model" class="form-label">Couleur de vehicule
                             </label>
-                            <input  required type="text" class="input" placeholder="Couleur" name="carnet">
+                            <input  required type="text" class="input" placeholder="Couleur" name="couleur">
                           </div>
                         </div>
                         <div class=" form-elements">
                           <div class="col col-md-6 form-element">
-                            <buuton   type="submit" id="applyFilter" class="  form-button ">
-                              Suivant
-                            </button>
+                            <input type="submit" id="applyFilter" name="suivant" class="  form-button " value="Suivant" />
+                              
                           </div>
                         </div>
                       </form>
@@ -383,6 +412,9 @@
       </div>
     </div>
   </div>
+
+  <!-- php -->
+
   <!-- end #main-wrapper -->
 
   <footer class="rq-footer">
@@ -493,7 +525,11 @@
         }
       });
     });
+
+
+   
   </script>
 </body>
 
 </html>
+
