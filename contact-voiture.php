@@ -1,3 +1,6 @@
+<?php
+include('./scripts/info_form.php');
+?>
 <html lang="en-US">
 
 <head>

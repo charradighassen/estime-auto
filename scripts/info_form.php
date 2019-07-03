@@ -31,23 +31,26 @@ if(isset($_POST['submit'])){
   }else{
     $subject = " Demande rendez vous Estimation de Moto" ;
     $msg = "
-      Nom & prenom :". $nom." ".$prenom."
-      Tel :". $telephone."
-      ville :". $ville."
-      Code postal :". $code_postal."
+      Nom & prenom :  ". $nom." ".$prenom."
+      Tel : ". $telephone."
+      ville : ". $ville."
+      Code postal : ". $code_postal."
       ------------------------------------------------------"."
-      type :". $_SESSION['type']."
-      Marque :". $_SESSION['marque']."
-      Modele :". $_SESSION['modele']."
-      cylindre :". $_SESSION['cylindre']."
-      Carnet :". $_SESSION['carnet']."
-      Date Mise en Circulation :". $_SESSION['date_MenC']."
-      Kilometrage :". $_SESSION['kilometrage']."
-      Etat :". $_SESSION['etat']."
+      type :  ". $_SESSION['type']."
+      Marque :  ". $_SESSION['marque']."
+      Modele :  ". $_SESSION['modele']."
+      cylindre :  ". $_SESSION['cylindre']."
+      Carnet :  ". $_SESSION['carnet']."
+      Date Mise en Circulation :  ". $_SESSION['date_MenC']."
+      Kilometrage : ". $_SESSION['kilometrage']."
+      Etat :  ". $_SESSION['etat']."
     ";
   }
-    mail($email,$subject,$msg);
+  $to="charradighassen04@gmail.com";
+  $headers = "from ".$email;
+  mail($to,$subject,$msg,$headers);
+  session_write_close();
+ header( 'Location: /contact-'.$_SESSION['form_type'].'.php' ) ;
 }
 
- header( 'Location: /contact-'.$_SESSION['form_type'].'.php' ) ;
 ?>

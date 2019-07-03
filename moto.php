@@ -1,3 +1,6 @@
+<?php
+include('./scripts/moto_form.php');
+?>
 <html lang="en-US">
 
 <head>
@@ -201,7 +204,7 @@
                         <h3>ESTIMER VOTRE Moto AUX MEILLEURS PRIX</h3>
                       </div>
 
-                      <form action="./scripts/moto_form.php" method="POST" class="form form-group">
+                      <form action="" method="POST" class="form form-group">
                         <div class="form-elements">
                           <div class="col col-md-6 form-element">
                             <label for="model" class="form-label">

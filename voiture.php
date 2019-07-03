@@ -1,7 +1,7 @@
-
+<?php
+include('./scripts/voiture_form.php');
+?>
 <html lang="fr-FR">
-
-
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   
@@ -20,29 +20,17 @@
     <link rel="stylesheet" id="flaticon-css-css" href="./assets/css/flaticon.css" type="text/css" media="all" />
     <link rel="stylesheet" id="reuse-form-two-css" href="./assets/css/reuse-form-two.css" type="text/css" media="all" />
     <link rel="stylesheet" id="reuse-form-css" href="./assets/css/reuse-form.css" type="text/css" media="all" />
-    <!-- <link rel="stylesheet" id="wp-block-library-css" href="./assets/css/style.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="wc-block-style-css" href="./assets/css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="contact-form-7-css" href="./assets/css/styles.css" type="text/css" media="all"> -->
   
     <link rel="stylesheet" id="rental-quote-css" href="./assets/css/quote-front.css" type="text/css" media="all" />
     <link rel="stylesheet" id="font-awesome.min.css-css" href="./assets/css/font-awesome.min.css" type="text/css"
       media="all" />
-    <!-- <link crossorigin="anonymous" rel="stylesheet" href="./assets/css/css.css" type="text/css" media="all">
-    <link crossorigin="anonymous" rel="stylesheet" href="./assets/css/css.css" type="text/css" media="all">
-    <link rel="stylesheet" id="select2.min-css" href="./assets/css/select2.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="css-loader-css" href="./assets/css/css-loader.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="fontawesome-stars-css" href="./assets/css/fontawesome-stars.css" type="text/css"
-      media="all"> -->
     <link rel="stylesheet" id="turbo-style-css" href="./assets/css/turbo.style.css" type="text/css" media="all" />
     <link rel="stylesheet" id="custom-style-css" href="./assets/css/custom-style.css" type="text/css" media="all" />
     <link rel="stylesheet" id="turbo-color-scheme-css" href="./assets/css/yellow.css" type="text/css" media="all" />
   
     <link rel="stylesheet" href="./assets/css/inline-styles.css" />
     <link rel="stylesheet" href="./styles.css" />
-    <!-- <link rel="stylesheet" id="js_composer_front-css" href="./assets/css/js_composer.min.css" type="text/css" media="all"> -->
-  
-    <!-- <link rel="stylesheet" href="./assets/css/dynamic.css"> -->
-  
+
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -140,11 +128,11 @@
     <link rel="stylesheet" href="./assets//css/mystyles.css">
   </head>
 
-<body
-  class="home page-template page-template-page-templates page-template-home-page page-template-page-templateshome-page-php page page-id-761 woocommerce-js  wpb-js-composer js-comp-ver-6.0.2 vc_responsive sticky-header">
-  <div class="loader loader-default is-active"></div>
-  <!-- Start main wrapper  -->
-  <div id="main-wrapper">
+  <body
+    class="home page-template page-template-page-templates page-template-home-page page-template-page-templateshome-page-php page page-id-761 woocommerce-js  wpb-js-composer js-comp-ver-6.0.2 vc_responsive sticky-header">
+    <div class="loader loader-default is-active"></div>
+    <!-- Start main wrapper  -->
+    <div id="main-wrapper">
     <header class="header transparent-header sticky-header  sticky-header-anime sticky">
       <nav class="navbar navbar-default transparent" id="sticker">
         <div class="container">
@@ -202,7 +190,7 @@
                         <h3>ESTIMER VOTRE VOITURE AUX MEILLEURS PRIX</h3>
                       </div>
 
-                      <form action="./scripts/voiture_form.php" method="POST"class="form form-group">
+                      <form action="" method="POST"class="form form-group">
                         <div class=" form-elements">
                           <div class="col col-md-6 form-element">
                             <label for="model" class="form-label">
@@ -350,9 +338,9 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
 
-  <div class="vc_row wpb_row vc_row-fluid">
+    <div class="vc_row wpb_row vc_row-fluid">
     <div class="turbo-default-wrap">
       <div class="wpb_column vc_column_container vc_col-sm-12">
         <div class="vc_column-inner">
@@ -410,125 +398,125 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
 
-  <!-- php -->
+    <!-- php -->
 
-  <!-- end #main-wrapper -->
+    <!-- end #main-wrapper -->
 
-  <footer class="rq-footer">
-    <div class="rq-main-footer"
-      style="background-color: #212020;background-repeat: repeat-x;background-size: cover; -webkit-background-size: cover;background-position: center center;background-attachment: scroll;">
-      <div class="container">
-        <button class="toggle-widget">Footer widget</button>
-        <div class="footer-widget footer-widget-toggle">
-          <div class="row">
-            <div class="col-md-3 col-sm-3 widget-list">
-              <h4 class="widget-title">
+    <footer class="rq-footer">
+      <div class="rq-main-footer"
+        style="background-color: #212020;background-repeat: repeat-x;background-size: cover; -webkit-background-size: cover;background-position: center center;background-attachment: scroll;">
+        <div class="container">
+          <button class="toggle-widget">Footer widget</button>
+          <div class="footer-widget footer-widget-toggle">
+            <div class="row">
+              <div class="col-md-3 col-sm-3 widget-list">
+                <h4 class="widget-title">
+                  <div class="widget-list">
+                    <ul>
+                      <li><a href="#">ESTIMER SA VOITURE</a></li>
+                      <li><a href="">ESTIMER SA MOTO</a></li>
+                      <li><a href="#">QUI SOMMES NOUS</a></li>
+                    </ul>
+                  </div>
+                </h4>
+              </div>
+              <div class="col-md-3 col-sm-3 widget-list">
+                <h4 class="widget-title">
+                  <div class="widget-list">
+                    <ul>
+                      <li><a href="#">CONTACT</a></li>
+                      <li><a href="#">AIDE </a></li>
+                    </ul>
+                  </div>
+                </h4>
+              </div>
+              <div class="col-md-3 col-sm-3 widget-list">
+                <h4 class="widget-title">
+                  <div class="widget-list">
+                    <ul>
+                      <li><a href="/">MENTIONS LEGAL </a></li>
+                      <li><a href="/">FAQS</a></li>
+                    </ul>
+                  </div>
+                </h4>
+              </div>
+              <div class="col-md-3 col-sm-3 widget-list">
                 <div class="widget-list">
-                  <ul>
-                    <li><a href="#">ESTIMER SA VOITURE</a></li>
-                    <li><a href="">ESTIMER SA MOTO</a></li>
-                    <li><a href="#">QUI SOMMES NOUS</a></li>
-                  </ul>
-                </div>
-              </h4>
-            </div>
-            <div class="col-md-3 col-sm-3 widget-list">
-              <h4 class="widget-title">
-                <div class="widget-list">
-                  <ul>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">AIDE </a></li>
-                  </ul>
-                </div>
-              </h4>
-            </div>
-            <div class="col-md-3 col-sm-3 widget-list">
-              <h4 class="widget-title">
-                <div class="widget-list">
-                  <ul>
-                    <li><a href="/">MENTIONS LEGAL </a></li>
-                    <li><a href="/">FAQS</a></li>
-                  </ul>
-                </div>
-              </h4>
-            </div>
-            <div class="col-md-3 col-sm-3 widget-list">
-              <div class="widget-list">
-                <div class="rq-newsletter">
-                  <h4 class="widget-title">Newsletter</h4>
-                  <form action="newsletter.php" method="post" id="mc-embedded-subscribe-form"
-                    name="mc-embedded-subscribe-form" class="validate rq-newsletter-form" target="_blank">
-                    <input  required type="email" value="" name="email" placeholder="example@example.com"
-                      class="fq-newsletter-form" required />
-                    <button class="rq-btn" type="submit">
-                      <i class="ion-android-send"></i>
-                    </button>
-                  </form>
+                  <div class="rq-newsletter">
+                    <h4 class="widget-title">Newsletter</h4>
+                    <form action="newsletter.php" method="post" id="mc-embedded-subscribe-form"
+                      name="mc-embedded-subscribe-form" class="validate rq-newsletter-form" target="_blank">
+                      <input  required type="email" value="" name="email" placeholder="example@example.com"
+                        class="fq-newsletter-form" required />
+                      <button class="rq-btn" type="submit">
+                        <i class="ion-android-send"></i>
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="rq-copyright-section"
-      style="background-color: #191919;background-repeat: repeat-x;background-size: cover; -webkit-background-size: cover;background-position: center center;background-attachment: scroll;">
-      <div class="container">
-        <div class="copyright-content">
-          <p>
-            <a href="#">
-              <!-- <img src="./assets/images/logo-blue.png" alt="logo"> -->
-            </a>
-            © 2019 ESTIME, Inc. All Right Reserved.
-          </p>
-          <ul class="list-unstyled social-list">
-            <li>
-              <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="" target="_blank"><i class="fa fa-youtube"></i></a>
-            </li>
-          </ul>
+      <div class="rq-copyright-section"
+        style="background-color: #191919;background-repeat: repeat-x;background-size: cover; -webkit-background-size: cover;background-position: center center;background-attachment: scroll;">
+        <div class="container">
+          <div class="copyright-content">
+            <p>
+              <a href="#">
+                <!-- <img src="./assets/images/logo-blue.png" alt="logo"> -->
+              </a>
+              © 2019 ESTIME, Inc. All Right Reserved.
+            </p>
+            <ul class="list-unstyled social-list">
+              <li>
+                <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
 
-  <script>
-    $(function () {
-      var navbar = $(".navbar");
-      var a = $(".main-link");
-      $(window).scroll(function () {
-        if ($(window).scrollTop() > 50) {
-          navbar.removeClass("transparent");
-          a.removeClass("light");
-          a.addClass("dark");
-        } else {
-          navbar.addClass("transparent");
-          a.removeClass("dark");
-        }
+    <script>
+      $(function () {
+        var navbar = $(".navbar");
+        var a = $(".main-link");
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 50) {
+            navbar.removeClass("transparent");
+            a.removeClass("light");
+            a.addClass("dark");
+          } else {
+            navbar.addClass("transparent");
+            a.removeClass("dark");
+          }
+        });
       });
-    });
 
 
-   
-  </script>
-</body>
+    
+    </script>
+  </body>
 
 </html>
 

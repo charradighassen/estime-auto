@@ -99,7 +99,8 @@
             <div class="wpb_wrapper">
               <div class="header turbo-vertical-search-wrapper ">
                 <div class="header-body"
-                  style="background: url(&#39;./assets/images/bg-home.png&#39;) top center no-repeat; background-size: 100% ;">
+                  style="background: url(&#39;./assets/images/bg-home.png&#39;) top center no-repeat; background-size: 100% ; padding-top: 5% !important;
+}">
                   <div class="container">
                     <div class="main-header">
                       <div class="logo">

@@ -1,4 +1,3 @@
-
 <?php
 if(isset($_POST['suivant'])){
   // commun variables 
@@ -27,6 +26,7 @@ if(isset($_POST['suivant'])){
   $_SESSION["motorisation"] = $motorisation;
   $_SESSION["couleur"] = $couleur;
   $_SESSION["form_type"] = "voiture";
+  session_write_close();
   header( 'Location: /contact-voiture.php' ) ;
 }
 

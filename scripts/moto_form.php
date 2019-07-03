@@ -20,6 +20,7 @@ $_SESSION["date_MenC"] = $date_MenC;
 $_SESSION["kilometrage"] = $kilometrage;
 $_SESSION["etat"] = $etat;
 $_SESSION["form_type"] = "moto";
+session_write_close();
 header( 'Location: /contact-moto.php' ) ;
 }
 

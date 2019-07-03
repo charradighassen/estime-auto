@@ -1,4 +1,6 @@
 <?php
+include('./scripts/info_form.php');
+?>
 <html lang="en-US">
 
 <head>
@@ -263,9 +265,8 @@
     </div>
   </div>
   <!-- end #main-wrapper -->
-  <?php
-  include('./scripts/info_form.php');
-  ?>
+
+
   <footer class="rq-footer">
       <div class="rq-main-footer"
         style="background-color: #212020;background-repeat: repeat-x;background-size: cover; -webkit-background-size: cover;background-position: center center;background-attachment: scroll;">
