@@ -201,7 +201,7 @@
                         <h3>ESTIMER VOTRE Moto AUX MEILLEURS PRIX</h3>
                       </div>
 
-                      <form action="./moto_form.php" method="POST" class="form form-group">
+                      <form action="./scripts/moto_form.php" method="POST" class="form form-group">
                         <div class="form-elements">
                           <div class="col col-md-6 form-element">
                             <label for="model" class="form-label">
@@ -526,7 +526,7 @@
                             <label for="marque" class="form-label">
                               Cylindre
                             </label>
-                            <input required type="number" class="input" placeholder="Combien de Cylindre"
+                            <input required type="number" class="input" min="0" placeholder="Combien de Cylindre"
                               name="cylindre">
                           </div>
                           <div class="col col-md-6 form-element">

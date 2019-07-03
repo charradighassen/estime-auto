@@ -18,6 +18,9 @@
   width: 40vw !important ;
 }
 /* home header */
+.header-body{
+  padding-top: 5% !important;
+}
 .main-header{
   text-align: center;
   float: center;
@@ -64,7 +67,9 @@
   line-height: 40px;
   font-weight: 600;
 }
-
+.main-description{
+  font-size: 14px !important;
+}
 /* redifine css */
 
 .turbo-vertical-search-area{

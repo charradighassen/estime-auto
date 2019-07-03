@@ -202,7 +202,7 @@
                         <h3>ESTIMER VOTRE VOITURE AUX MEILLEURS PRIX</h3>
                       </div>
 
-                      <form action="./voiture_form.php" method="POST"class="form form-group">
+                      <form action="./scripts/voiture_form.php" method="POST"class="form form-group">
                         <div class=" form-elements">
                           <div class="col col-md-6 form-element">
                             <label for="model" class="form-label">
@@ -315,9 +315,8 @@
                             <label for="" class="select">
                               <select required name="boite_vitesse" id="modele" class="select-element">
                                 <option value="-1"> Type de boite de vitesse</option>
-                                <option value="Audi">Diesel</option>
-                                <option value="Ferrari">Ferrari</option>
-                                <option value="Ibiza">Ibiza</option>
+                                <option value="manuelle">manuelle</option>
+                                <option value="automatique">automatique</option>
                               </select>
                             </label>
 

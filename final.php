@@ -1,4 +1,3 @@
-<?php
 <html lang="en-US">
 
 <head>
@@ -137,59 +136,7 @@
                   style="background: url(&#39;./assets/images/bg-moto.jpg&#39;) top center no-repeat; background-size: 100% auto;">
                   <div class="container">
                     <div class="turbo-vertical-search-area">
-                      <div class="search-header">
-                        <h3>PRENEZ RENDEZ VOUS</h3>
-                      </div>
-
-                      <form action="" method="POST" class="form form-group">
-                     
-                        <div class="form-elements">
-
-                          <div class="col col-md-6 form-element">
-                            <label for="marque" class="form-label">
-                              Nom
-                            </label>
-                            <input type="text" class="input" placeholder="Taper votre Nom" name="nom">
-                          </div>
-                          <div class="col col-md-6  form-element">
-                            <label for="model" class="form-label">
-                              Prénom</label>
-                            <input type="text" class="input" placeholder="Taper votre Prénom" name="prenom">
-                          </div>
-                        </div>
-                        <div class="form-elements">
-                          <div class="col col-md-6  form-element">
-                            <label for="email" class="form-label">E-mail
-                            </label>
-                            <input type="text" class="input" placeholder="Taper votre E-mail" name="email">
-                          </div>
-                          <div class="col col-md-6 form-element">
-                            <label for="marque" class="form-label">
-                             Télèphone
-                            </label>
-                            <input type="text" class="input" placeholder="Taper votre numero" name="telephone">
-                          </div>
-                        </div>
-                        <div class="form-elements">
-                            <div class="col col-md-6  form-element">
-                              <label for="model" class="form-label">Ville
-                              </label>
-                              <input type="text" class="input" placeholder="Taper votre ville" name="ville">
-                            </div>
-                            <div class="col col-md-6 form-element">
-                              <label for="marque" class="form-label">
-                                Code Postal
-                              </label>
-                              <input type="text" class="input" placeholder="Taper votre code Postale" name="code_postal">
-                            </div>
-                          </div>
-                        <div class="form-elements">
-                          <div class="col col-md-6 form-element">
-                            <input type="submit"  value="Envoyer" name="submit" id="submit"  class="  form-button ">
-                            
-                          </div>
-                        </div>
-                      </form>
+                    <div class="row"><i class="fas fa-check message-icon"></i><h1 class="message">Votre demande a étè bien enregistré</h1></div>
                     </div>
                   </div>
                 </div>
@@ -263,9 +210,7 @@
     </div>
   </div>
   <!-- end #main-wrapper -->
-  <?php
-  include('./scripts/info_form.php');
-  ?>
+
   <footer class="rq-footer">
       <div class="rq-main-footer"
         style="background-color: #212020;background-repeat: repeat-x;background-size: cover; -webkit-background-size: cover;background-position: center center;background-attachment: scroll;">
@@ -374,9 +319,10 @@
       });
     });
     var sent = (e)=>{
+      setTimeout(() => {
         $('.turbo-vertical-search-area').empty();
         $('.turbo-vertical-search-area').append('<div class="row"><i class="fas fa-check message-icon"></i><h1 class="message">Votre demande a étè bien enregistré</h1></div>');
-    
+      }, 3000);
       
 
     }

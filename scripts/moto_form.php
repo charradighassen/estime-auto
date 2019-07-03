@@ -22,7 +22,6 @@ $_SESSION["kilometrage"] = $kilometrage;
 $_SESSION["etat"] = $etat;
 $_SESSION["form_type"] = "moto";
 header( 'Location: /contact-moto.php' ) ;
-//var_dump ($_SESSION);
 }
 
 

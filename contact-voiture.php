@@ -153,7 +153,7 @@
                         <h3>PRENEZ RENDEZ VOUS</h3>
                       </div>
 
-                      <form action="./info_form.php" method="POST" class="form form-group">
+                      <form action="./scripts/info_form.php" method="POST" class="form form-group">
                      
                         <div class="form-elements">
 
@@ -197,7 +197,7 @@
                           </div>
                         <div class="form-elements">
                           <div class="col col-md-6 form-element">
-                            <input required type="submit" id="submit" value="Envoyer" onClick='sent()' name="envoyer" class="  form-button "/>
+                            <input required type="submit" id="submit" value="Envoyer"  name="submit" class="  form-button "/>
                               
                           </div>
                         </div>
@@ -385,8 +385,10 @@
     });
 
     var sent = (e)=>{
-      $('.turbo-vertical-search-area').empty();
-      $('.turbo-vertical-search-area').append('<div class="row"><i class="fas fa-check message-icon"></i><h1 class="message">Votre demande a étè bien enregistré</h1></div>');
+        $('.turbo-vertical-search-area').empty();
+        $('.turbo-vertical-search-area').append('<div class="row"><i class="fas fa-check message-icon"></i><h1 class="message">Votre demande a étè bien enregistré</h1></div>');
+   
+      
 
     }
     

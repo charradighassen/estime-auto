@@ -26,15 +26,6 @@
 
 
 
-  <!-- 
-  <link rel="stylesheet" id="turbo-color-scheme-css" href="./assets/css/yellow.css"
-    type="text/css" media="all"> -->
-  <!-- 
-  <link rel="stylesheet" id="js_composer_front-css" href="./assets/css/js_composer.min.css" type="text/css" media="all"> -->
-  <!-- 
-  <link rel="stylesheet" href="./assets/css/dynamic.css">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./assets/css/inline-styles.css"> -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!--[if lt IE 9]>
@@ -114,7 +105,11 @@
                       <div class="logo">
                         <h1>logo</h1>
                       </div>
-                      <h3 class="main-title">ESTIMER VOTRE</h3>
+                      <h3 class="main-title">ESTIMER,PRENEZ RENDEZ-VOUS, VENDEZ !!</h3>
+                      <p class="main-description">
+                        Estimer votre véhicule au meilleurs prix*,prenez rendez vous proche de chez vous, Vendez votre voiture en toutes sécurité<br>
+                        offre de reprise 10 à 20 % plus élévé qu'en concession ou en ligne
+                      </p>
                       <div class=" main-btns-list">
 
                         <a href="./voiture.php" class=" btn-primary main-btn">VOITURE</a>
@@ -123,7 +118,6 @@
 
 
                       </div>
-                      <h3 class="main-title">AU MEILLEURS PRIX</h3>
                     </div>
                   </div>
                 </div>
