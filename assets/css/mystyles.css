@@ -89,6 +89,12 @@
     width: 100%;
   }
 }
+@media  screen and (min-width: 1600px) {
+  .turbo-vertical-search-area {
+    width: 767px !important;
+}
+
+}
 /* car - moto forms */
 
 
