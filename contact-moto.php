@@ -50,7 +50,19 @@ include('./scripts/info_form.php');
       .wpb_animate_when_almost_visible {
         opacity: 1;
       }
-    </style>
+    @media  screen and (max-width: 990px) {
+  
+  .form-element{
+    width: 100%;
+  }
+  .light{
+    background-color: white;
+    color:#009CDE !important;
+  }
+  .dark{
+    background-color: white;
+  }
+}</style>
   </noscript>
 <link rel="stylesheet" href="./assets/css/mystyles.css">
 
@@ -79,6 +91,39 @@ include('./scripts/info_form.php');
 
 
   <link rel="stylesheet" href="./assets//css/mystyles.css">
+  <style>
+       @media  screen and (max-width: 767px) {
+        .turbo-vertical-search-area{
+          width: 90vw !important;
+        }
+        .form-element{
+          width: 100%;
+        }
+        header.header.transparent-header.sticky nav.navbar.navbar-default .navbar-nav {
+          background:white;
+          color:#009CDE !important;
+        }
+        .navbar-header{
+          background:white;
+        }
+        .dark{
+          color:#009CDE !important  ;
+        }
+
+      }
+  @media  screen and (max-width: 990px) {
+  
+  .form-element{
+    width: 100%;
+  }
+  .light{
+    background-color: white;
+    color:#009CDE !important;
+  }
+  .dark{
+    background-color: white;
+  }
+}</style>
 </head>
 
 <body
@@ -90,13 +135,17 @@ include('./scripts/info_form.php');
       <nav class="navbar navbar-default transparent" id="sticker">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="" class="navbar-brand"> </a>
+            <a href="" class="navbar-brand">
+              <div class="logo" style="margin-top:10%">
+                <img  id="logo" src="./assets/images/logo-dark.png"style=" width:100px"alt="">
+              </div>
+            </a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <div class="menu-turbo-menu-container">
@@ -116,7 +165,7 @@ include('./scripts/info_form.php');
                 </li>
                 <li id="menu-item-1156" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
                   <a href="./propos.html" class="main-link  dropdown-toggle" role="button" data-toggle="" aria-haspopup="true"
-                    aria-expanded="false">QUI SOMMES NOUS</a>
+                    aria-expanded="false">FAQ</a>
                 </li>
                 <li id="menu-item-1157" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
                   <a href="./contact.php" class=" main-link  dropdown-toggle" role="button" data-toggle="" aria-haspopup="true"
@@ -136,7 +185,7 @@ include('./scripts/info_form.php');
             <div class="wpb_wrapper">
               <div class="header turbo-vertical-search-wrapper index-two-header">
                 <div class="header-body"
-                  style="background: url(&#39;./assets/images/bg-moto.jpg&#39;) top center no-repeat; background-size: 100% auto;">
+                  style="background: url(&#39;&#39;) top center no-repeat; background-size: 100% auto;">
                   <div class="container">
                     <div class="turbo-vertical-search-area">
                       <div class="search-header">
@@ -167,7 +216,7 @@ include('./scripts/info_form.php');
                           </div>
                           <div class="col col-md-6 form-element">
                             <label for="marque" class="form-label">
-                             Télèphone
+                             Téléphone
                             </label>
                             <input type="text" class="input" placeholder="Taper votre numero" name="telephone">
                           </div>
@@ -213,48 +262,36 @@ include('./scripts/info_form.php');
             <div class="rq-content-block turbo-how-it-work-content-wrapper turbo-grid">
               <div class="turbo-blok-content-inner-wrapper">
                 <div class="rq-title-container text-center">
-                  <h2 class="rq-title no-padding">
-                    Comment vendre sa Voiture
-                  </h2>
-                  <p>
-                    The proper business solution for your developing business
-                    strategies and corporation
-                  </p>
+                  <h2 class="rq-title no-padding">Comment vendre sa voiture ou sa moto ?</h2>
+                  <p>3 étapes s'offrent à vous, nos experts sont là pour vous guider tout au long de la vente.</p>
                 </div>
                 <div class="rq-how-it-work-content">
                   <div class="container">
                     <div class="row">
                       <div class="col-md-4">
                         <div class="how-it-work-single">
-                          <img src="./assets/images/location.png" alt="Img" />
-                          <h4>Comment Vendre Sa Voiture</h4>
-                          <div class="content">
-                            Proper Business solution for your developing
-                            business strategies and corporation
-                          </div>
+                          <img src="./assets/images/payment.png" alt="Img">
+                          <h4>ESTIMEZ VOTRE VOITURE ET MOTO</h4>
+                          <div class="content">Estimation précise de votre voiture et moto au meilleur prix garanti.</div>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="how-it-work-single">
-                          <img src="./assets/images/payment.png" alt="Img" />
-                          <h4>Estimation</h4>
-                          <div class="content">
-                            Proper Business solution for your developing
-                            business strategies and corporation
-                          </div>
+                          <img src="./assets/images/location.png" alt="Img">
+                          <h4>PRENEZ RENDEZ-VOUS </h4>
+                          <div class="content">Prenez rendez-vous sur le lieu de votre choix (domicile, travail...) Aucun déplacement en agence.</div>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="how-it-work-single">
-                          <img src="./assets/images/trip.png" alt="Img" />
-                          <h4>Vendez Votre Voiture</h4>
-                          <div class="content">
-                            Proper Business solution for your developing
-                            business strategies and corporation
-                          </div>
+                          <img src="./assets/images/trip.png" alt="Img">
+                          <h4>VENDEZ VOTRE VOITURE</h4>
+                          <div class="content">Nous reprenons votre véhicule dès lors que notre offre vous convient. Paiement  sécurisé.</div>
                         </div>
                       </div>
+                      
                     </div>
+                    <h4 style="text-align:center;margin-top:5%;"> Des questions ? Rendez-vous sur la page <a style="color:#009CDE" href="./propos.html"> FAQ</a></h4>
                   </div>
                 </div>
               </div>
@@ -263,96 +300,95 @@ include('./scripts/info_form.php');
         </div>
       </div>
     </div>
-  </div>
+    
+
+    
+  </div>              
   <!-- end #main-wrapper -->
 
 
-  <footer class="rq-footer">
-      <div class="rq-main-footer"
-        style="background-color: #212020;background-repeat: repeat-x;background-size: cover; -webkit-background-size: cover;background-position: center center;background-attachment: scroll;">
-        <div class="container">
-          <button class="toggle-widget">Footer widget</button>
-          <div class="footer-widget footer-widget-toggle">
-            <div class="row">
-              <div class="col-md-3 col-sm-3 widget-list">
-                <h4 class="widget-title">
-                  <div class="widget-list">
-                    <ul>
-                      <li><a href="#">ESTIMER SA VOITURE</a></li>
-                      <li><a href="">ESTIMER SA MOTO</a></li>
-                      <li><a href="#">QUI SOMMES NOUS</a></li>
-                    </ul>
+                  <footer class="rq-footer">
+                  <div class="rq-main-footer"
+                    style="background-color: #212020;background-repeat: repeat-x;background-size: cover; -webkit-background-size: cover;background-position: center center;background-attachment: scroll;">
+                    <div class="container">
+                      <div class="" style="float:center; text-align:center">
+                        <div class="row">
+                          <div class="col-md-3 col-sm-3 widget-list">
+                            <h4 class="widget-title">
+                            <div class="widget-list">
+                              <ul>
+                                <li><a href="./voiture.php">ESTIMER SA VOITURE</a></li>
+                                <li><a href="./moto.php">ESTIMER SA MOTO</a></li>
+                                <li><a href="./propos.html">FAQ</a></li>
+                              </ul>
+                            </div>
+                            </h4>
+                          </div>
+                          <div class="col-md-3 col-sm-3 widget-list">
+                            <h4 class="widget-title">
+                            <div class="widget-list">
+                              <ul>
+                                <li><a href="./contact.php">CONTACT</a></li>
+                              </ul>
+                            </div>
+                            </h4>
+                          </div>
+                          <div class="col-md-3 col-sm-3 widget-list">
+                            <h4 class="widget-title">
+                            <div class="widget-list">
+                              <ul>
+                                <li><a href="/">MENTIONS LEGALE </a></li>
+                                
+                              </ul>
+                            </div>
+                            </h4>
+                          </div>
+                          <div class="col-md-3 col-sm-3 widget-list">
+                            <div class="widget-list">
+                              <div class="rq-newsletter">
+                                <h4 class="widget-title">Newsletter</h4>
+                                <form action="newsletter.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                  class="validate rq-newsletter-form" target="_blank">
+                                  <input type="email" value="" name="email" placeholder="example@example.com"
+                                  class="fq-newsletter-form" required />
+                                  <button class="rq-btn" type="submit" name="newsletter">
+                                  <i class="ion-android-send"></i>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </h4>
-              </div>
-              <div class="col-md-3 col-sm-3 widget-list">
-                <h4 class="widget-title">
-                  <div class="widget-list">
-                    <ul>
-                      <li><a href="#">CONTACT</a></li>
-                      <li><a href="#">AIDE </a></li>
-                    </ul>
+                  
+                  <div class="rq-copyright-section"
+                    style="background-color: #191919;background-repeat: repeat-x;background-size: cover; -webkit-background-size: cover;background-position: center center;background-attachment: scroll;">
+                    <div class="container">
+                      <div class="copyright-content">
+                       <p style="display:flex;justify-content:center;">
+                         <a href="/" ><img  src="./assets/images/logo-white.png" style="padding-top:10%; width:100px ;height:auto" alt="logo"></a>
+                          © 2019 ESTIME, Inc. Tous droits réservés.
+                        </p>
+                        <ul class="list-unstyled social-list">
+                          <li>
+                            <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+                          </li>
+                          <li>
+                            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+                          </li>
+                          <li>
+                            <a href="" target="_blank"><i class="fa fa-youtube"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                </h4>
-              </div>
-              <div class="col-md-3 col-sm-3 widget-list">
-                <h4 class="widget-title">
-                  <div class="widget-list">
-                    <ul>
-                      <li><a href="/">MENTIONS LEGAL </a></li>
-                      <li><a href="/">FAQS</a></li>
-                    </ul>
-                  </div>
-                </h4>
-              </div>
-              <div class="col-md-3 col-sm-3 widget-list">
-                <div class="widget-list">
-                  <div class="rq-newsletter">
-                    <h4 class="widget-title">Newsletter</h4>
-                    <form action="newsletter.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                      class="validate rq-newsletter-form" target="_blank">
-                      <input type="email" value="" name="email" placeholder="example@example.com"
-                        class="fq-newsletter-form" required />
-                      <button class="rq-btn" type="submit">
-                        <i class="ion-android-send"></i>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="rq-copyright-section"
-        style="background-color: #191919;background-repeat: repeat-x;background-size: cover; -webkit-background-size: cover;background-position: center center;background-attachment: scroll;">
-        <div class="container">
-          <div class="copyright-content">
-            <p>
-              <a href="#">
-                <!-- <img src="./assets/images/logo-blue.png" alt="logo"> -->
-              </a>
-              © 2019 ESTIME, Inc. All Right Reserved.
-            </p>
-            <ul class="list-unstyled social-list">
-              <li>
-                <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="" target="_blank"><i class="fa fa-youtube"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+                </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
@@ -381,6 +417,21 @@ include('./scripts/info_form.php');
       
 
     }
+    var clicked = true;
+                               function clickMe(){
+
+                                 if(clicked){
+                                  $('.toggle-widget').addClass('active');
+                                  $('.footer-widget-toggle').css('display','block');
+                                  clicked = false;
+                                 }else{
+                                  $('.toggle-widget').removeClass('active');
+                                  $('.footer-widget-toggle').css('display','none');
+                                  clicked = true;
+                                 }
+                               
+                                  
+                                } 
   </script>
 </body>
 

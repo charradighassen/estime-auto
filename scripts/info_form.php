@@ -1,7 +1,7 @@
 <?php
-
+try{
+session_start();
 if(isset($_POST['submit'])){
-  session_start();  
   isset($_POST['email']) ? $email =$_POST['email'] :"";
   isset($_POST['nom']) ? $nom =$_POST['nom'] :"";
   isset($_POST['prenom']) ? $prenom =$_POST['prenom'] :"";
@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
       ------------------------------------------------------"."
       Marque :". $_SESSION['marque']."
       Modele :". $_SESSION['modele']."
-      Etat :". $_SESSION['etat']."
+      État :". $_SESSION['etat']."
       Carnet :". $_SESSION['carnet']."
       Date Mise en Circulation :". $_SESSION['date_MenC']."
       Kilometrage :". $_SESSION['kilometrage']."
@@ -28,6 +28,7 @@ if(isset($_POST['submit'])){
       Motorisation :". $_SESSION['motorisation']."
       Couleur :". $_SESSION['couleur']."
     ";
+    $final = "final1.php";
   }else{
     $subject = " Demande rendez vous Estimation de Moto" ;
     $msg = "
@@ -43,14 +44,20 @@ if(isset($_POST['submit'])){
       Carnet :  ". $_SESSION['carnet']."
       Date Mise en Circulation :  ". $_SESSION['date_MenC']."
       Kilometrage : ". $_SESSION['kilometrage']."
-      Etat :  ". $_SESSION['etat']."
+      État :  ". $_SESSION['etat']."
     ";
+    $final = "final.php";
   }
+  // $to="benlassouedkhaled@gmail.com";
   $to="charradighassen04@gmail.com";
   $headers = "from ".$email;
   mail($to,$subject,$msg,$headers);
   session_write_close();
- header( 'Location: /contact-'.$_SESSION['form_type'].'.php' ) ;
+ header( 'Location: /final.php' ) ;
 }
+}catch(Exeption $e){
+  
+}
+
 
 ?>

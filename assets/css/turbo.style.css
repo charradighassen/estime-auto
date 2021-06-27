@@ -20143,8 +20143,12 @@ header.header.transparent-header nav.navbar.navbar-default .navbar-nav li.active
 header.header.transparent-header nav.navbar.navbar-default .navbar-nav li a {
     color: #292f33;
     font-size: 14px;
-    font-family: Poppins, sans-serif;
+    line-height: 28px;
+    font-weight: 600;
+/*  font-size: 14px;
     font-weight: 500;
+*/    font-family: Poppins, sans-serif;
+    
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease
